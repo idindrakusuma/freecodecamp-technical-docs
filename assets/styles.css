@@ -1,9 +1,17 @@
+/**
+* Technical Documentation Web - FreeCodeCamp Project
+* @author Indra Kusuma
+* @github github.com/idindrakusuma
+*/
+
 :root {
   --primary-color: #20232a;
   --primary-text-color: #61dafb;
+  --text-desc-color: #282c34;
   --white-color: #fff;
 }
 
+/* reset browser style */
 * {
   margin: 0;
   padding: 0;
@@ -14,10 +22,16 @@
   box-sizing: inherit;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
+/* reset end */
 
 .app-page {
   width: 100%;
@@ -29,8 +43,12 @@ body {
   padding: 0;
 }
 
+
+/* Main Header Style */
 #main-header {
   background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
 }
 
 .main-header {
@@ -79,4 +97,87 @@ body {
 .active {
   color: var(--primary-text-color) !important;
   border-bottom-style: solid;
+}
+/* Main Header Style - End */
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+#navbar {
+  width: 30%;
+  padding: 16px;
+  margin-top: 70px;
+  position: fixed;
+}
+
+.left-nav > li {
+  list-style: none;
+  padding: 8px 0;
+}
+
+.left-nav > li > a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.inactive-link {
+  color: #6d6d6d;
+}
+
+#main-doc {
+  width: 70%;
+  margin-top: 90px;
+  margin-left: 30%;
+}
+
+.main-section > header {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-desc-color);
+}
+
+.main-section > p {
+  margin: 16px 0;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.main-section > p > a {
+  font-weight: 700;
+  color: var(--text-desc-color);
+}
+
+.main-section > p > a:hover {
+  background-color: #bbeffd;
+  border-bottom-color: #1a1a1a;
+}
+
+.main-section > h3 {
+  font-size: 18px;
+}
+
+.main-section > p > code {
+  background-color: rgba(27,31,35,.05);
+  padding: 3.2px 6.4px;;
+  border-radius: 3px;
+}
+
+pre {
+  margin-bottom: 16px;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 8px;
+  padding: 16px 0 0 0;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.img-responsive {
+  height: auto;
+  margin: 0 auto;
 }
