@@ -15,10 +15,12 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: inherit;
 }
 
@@ -42,7 +44,6 @@ body {
   margin: 0 auto;
   padding: 0;
 }
-
 
 /* Main Header Style */
 #main-header {
@@ -173,8 +174,8 @@ body {
 }
 
 .main-section > p > code {
-  background-color: rgba(27,31,35,.05);
-  padding: 3.2px 6.4px;;
+  background-color: rgba(27, 31, 35, 0.05);
+  padding: 3.2px 6.4px;
   border-radius: 3px;
 }
 
@@ -187,10 +188,69 @@ pre {
 }
 
 code {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
 }
 
 .img-responsive {
   height: auto;
   margin: 0 auto;
+}
+
+
+
+@media only screen and (max-width: 768px)  {
+  .img-logo {
+    width: 160px;
+    padding-left: 8px;
+  }
+
+  .img-logo > span {
+    font-size: 14px;
+    margin-left: 8px;
+  }
+
+  .right-menu {
+    width: calc(100% - 180px);
+  }
+
+  .right-menu > nav {
+    display: flex;
+    overflow-y: auto;
+  }
+
+  #navbar {
+    width: 100%;
+    margin-top: 60px;
+    padding: 0;
+    background-color: #373940;
+  }
+
+  #navbar > header {
+    display: flex;
+  }
+
+  #navbar > header > ul {
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+  }
+
+  #navbar > header > ul > li {
+    margin: 8px;
+  }
+
+  #navbar > header > ul > li > a {
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .inactive-link {
+    display: none;
+  }
+
+  #main-doc {
+    width: 95%;
+    padding: 24px;
+    margin: 90px auto 20px auto;
+  }
 }
