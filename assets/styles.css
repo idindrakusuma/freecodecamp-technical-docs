@@ -145,6 +145,18 @@ body {
   line-height: 1.7;
 }
 
+.main-section > ul {
+  font-size: 16px;
+  padding-left: 24px;
+  line-height: 1.7;
+  margin: 16px 0;
+}
+
+.main-section > ul > li > a {
+  font-weight: 700;
+  color: var(--text-desc-color);
+}
+
 .main-section > p > a {
   font-weight: 700;
   color: var(--text-desc-color);
@@ -157,6 +169,7 @@ body {
 
 .main-section > h3 {
   font-size: 18px;
+  color: var(--text-desc-color);
 }
 
 .main-section > p > code {
